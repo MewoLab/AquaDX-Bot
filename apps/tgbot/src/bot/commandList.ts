@@ -11,6 +11,7 @@ export const commandListPrivate = [
 	{ command: 'bind', description: '绑定账号' },
 	{ command: 'profile', description: '查看自己绑定的账号' },
 	{ command: 'delprofile', description: '删除绑定的账号' },
+	{ command: 'export', description: '导出当前账号的成绩列表（国服 / 国际服）' },
 	...commandListBase
 ] as const;
 
