@@ -70,4 +70,8 @@ export class BotAdapter extends Bot<BotTypes> {
 			}
 		});
 	}
+	
+	constructFile(file: Uint8Array, filename: string): BotTypes['SendableFile'] {
+		return new InputFile(file, filename);
+	}
 }

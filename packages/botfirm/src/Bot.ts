@@ -36,4 +36,8 @@ export abstract class Bot<T extends BotTypes> {
 	public abstract registerInlineQuery(query: RegExp | RegExp[], handler: (event: InlineQueryEventBase<T>) => Promise<boolean>): void;
 
 	public abstract registerInlineQueryResultChosen(resultId: RegExp | RegExp[], handler: (event: InlineQueryResultChosenEventBase<T>) => Promise<boolean>): void;
+
+	public constructFile(file: Uint8Array, filename: string): T['SendableFile'] {
+		throw new Error('不支持此平台');
+	}
 }

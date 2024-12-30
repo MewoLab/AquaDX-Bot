@@ -24,6 +24,21 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile }: Build
 		return true;
 	});
 
+	bot.registerCommand('debug_net_card', async (event) => {
+		checkAdminUser(event.fromId);
+
+		const card = event.params[0];
+		const req = await client.debugUserProfile(card);
+		const data = await req.json();
+		const enc = new TextEncoder();
+
+		await event.reply()
+			.addDocument(bot.constructFile(enc.encode(JSON.stringify(data, null, 2)), `${card}.json`))
+			.dispatch();
+
+		return true;
+	});
+
 	// bot.command('set_my_command', async (ctx) => {
 	// 	ctx.transaction('set_my_command');
 	// 	checkAdminUser(ctx);

@@ -18,5 +18,6 @@ export const commandListAdmin = [
 	...commandListPrivate,
 	{ command: 'ban', description: '在排行榜中封禁用户' },
 	{ command: 'set_my_command', description: '更新 Bot 命令列表' },
+	{ command: 'debug_net_card', description: '调试 Net 用户资料，参数：卡号' },
 	// { command: 'stats', description: '统计信息' }
 ] as const;

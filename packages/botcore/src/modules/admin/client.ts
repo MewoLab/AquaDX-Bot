@@ -22,4 +22,8 @@ export default class AdminClient {
 	public async rankingBan(username: string) {
 		await this.baseRequest('ranking-ban', { username });
 	}
+
+	public async debugUserProfile(cardId: string) {
+		return await this.baseRequest('debug-user-profile', { cardId });
+	}
 }
