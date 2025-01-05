@@ -72,4 +72,12 @@ export abstract class UserSource {
 	}
 
 	public abstract getNameplate(userId: number | string): Promise<Nameplate>;
+
+	public async getChuniUserMusic(userId: number | string, musicIdList: number[]) {
+		throw new Error('不支持的账号类型');
+	}
+
+	public async getChuniUserRating(userId: number | string, musicIdList: number[]) {
+		throw new Error('不支持的账号类型');
+	}
 }

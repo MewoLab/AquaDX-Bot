@@ -70,15 +70,11 @@ export default class Song implements DataSong {
 	public get coverUrl() {
 		if (JACKET_EXIST_IDS.includes(this.id))
 			return getAssetUrl(ASSET_TYPE.JacketPng, this.id);
-		if (this.imageName)
-			return 'https://shama.dxrating.net/images/cover/v2/' + this.imageName;
 	}
 
 	public get coverAvif() {
 		if (JACKET_EXIST_IDS.includes(this.id))
 			return getAssetUrl(ASSET_TYPE.Jacket, this.id);
-		if (this.imageName)
-			return 'https://shama.dxrating.net/images/cover/v2/' + this.imageName;
 	}
 
 	public get basicInfo() {
