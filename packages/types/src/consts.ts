@@ -3,10 +3,15 @@ import { GameVariantPlateMusicList } from './types';
 import { ASSET_TYPE, getAssetUrl } from '@clansty/maibot-utils/src/getAssetUrl';
 
 export const LEVEL = ['绿', '黄', '红', '紫', '白'] as const;
+export const CHU_LEVEL = ['绿', '黄', '红', '紫', '黑'] as const;
 export const LEVEL_COLOR = ['rgb(34, 187, 91)', 'rgb(251, 156, 45)', 'rgb(246, 72, 97)', 'rgb(158, 69, 226)',
 	'rgb(228, 166, 255)'] as const;
+export const CHU_LEVEL_COLOR = ['rgb(0, 170, 133)', 'rgb(255, 124, 0)', 'rgb(244, 40, 41)', 'rgb(148, 25, 215)',
+	'rgb(117, 32, 45)'] as const;
 export const LEVEL_EMOJI = ['🟢', '🟡', '🔴', '🟣', '⚪️'] as const;
+export const CHU_LEVEL_EMOJI = ['🟢', '🟡', '🔴', '🟣', '⚫️'] as const;
 export const LEVEL_EN = [DifficultyEnum.Basic, DifficultyEnum.Advanced, DifficultyEnum.Expert, DifficultyEnum.Master, DifficultyEnum.ReMaster] as const;
+export const CHU_LEVEL_EN = ['BASIC', 'ADVANCED', 'EXPERT', 'MASTER', 'ULTIMA'] as const;
 export const LEVELS = ['1', '2', '3', '4', '5', '6', '7', '7+', '8', '8+', '9', '9+', '10', '10+', '11', '11+', '12', '12+', '13', '13+', '14', '14+', '15'] as const;
 export const FC = ['', 'FC', 'FC+', 'AP', 'AP+'] as const;
 export const DX_VERSIONS = [VersionEnum.Maimaiでらっくす, VersionEnum.MaimaiでらっくすPLUS, VersionEnum.Splash, VersionEnum.SplashPLUS, VersionEnum.UNiVERSE, VersionEnum.UNiVERSEPLUS,

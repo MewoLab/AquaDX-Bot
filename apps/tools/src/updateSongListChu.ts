@@ -11,8 +11,8 @@ const skipWhenExist = process.argv[3] === 'skip';
 const optionDirs = await fsP.readdir(path.join(baseDir, 'option'));
 
 for (const opt of [path.join(baseDir, 'data', 'A000'), ...optionDirs.map(d => path.join(baseDir, 'option', d))]) {
-	if(!fs.existsSync(path.join(opt, 'music'))) continue;
-	
+	if (!fs.existsSync(path.join(opt, 'music'))) continue;
+
 	for (const f of await fsP.readdir(path.join(opt, 'music'))) {
 		if (!f.startsWith('music')) continue;
 		if (!fs.existsSync(path.join(opt, 'music', f, 'Music.xml'))) continue;
@@ -28,10 +28,11 @@ for (const opt of [path.join(baseDir, 'data', 'A000'), ...optionDirs.map(d => pa
 		}
 
 		music.name = meta.MusicData.name.str.toString();
-		console.log(music.name);
+		// console.log(music.name);
 		music.ver = meta.MusicData.releaseTagName.str.toString();
 		music.composer = meta.MusicData.artistName.str.toString();
-		// music.genre = meta.MusicData.genreName.str.toString();
+		music.genre = meta.MusicData.genreNames.list.StringID.str.toString();
+		if (!music.genre) console.log(meta.MusicData.genreNames);
 		music.worldsEndStars = meta.MusicData.starDifType.toString();
 		music.worldsEndTag = meta.MusicData.worldsEndTagName.str.toString();
 

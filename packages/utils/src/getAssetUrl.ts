@@ -4,6 +4,8 @@ export enum ASSET_TYPE {
 	Icon = 'Icon',
 	Jacket = 'Jacket',
 	JacketPng = 'Jacket-PNG',
+	ChuniJacket = 'Chu/Jacket',
+	ChuniJacketPng = 'Chu/Jacket-PNG',
 	Plate = 'Plate',
 }
 
@@ -16,6 +18,10 @@ export const getAssetUrl = (type: ASSET_TYPE, id: number | string) => {
 		case ASSET_TYPE.JacketPng:
 			id = id.toString().padStart(6, '0');
 			break;
+		case ASSET_TYPE.ChuniJacket:
+		case ASSET_TYPE.ChuniJacketPng:
+			id = id.toString().padStart(4, '0');
+			break;
 		case ASSET_TYPE.Plate:
 			id = `UI_Plate_${id.toString().padStart(6, '0')}`;
 			break;
@@ -26,6 +32,7 @@ export const getAssetUrl = (type: ASSET_TYPE, id: number | string) => {
 
 	let ext = 'avif';
 	if (type === ASSET_TYPE.JacketPng) ext = 'png';
+	if (type === ASSET_TYPE.ChuniJacketPng) ext = 'png';
 
 	return `https://maimai-assets.pages.dev/${type}/${id}.${ext}`;
 };
