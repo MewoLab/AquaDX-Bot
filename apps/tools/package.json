@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "genFileIds": "tsx src/genFileIds.ts",
-    "update-allmusic-web": "scp all-music.json daisy:/etc/nginx/aqua-data/mai2/00"
+    "update-allmusic-web": "scp all-music.json daisy:/etc/nginx/aqua-data/mai2/00",
+    "update-allmusic-web-chu": "scp chu-all-music.json daisy:/etc/nginx/aqua-data/chu3/00/all-music.json"
   },
   "devDependencies": {
     "@clansty/maibot-data": "workspace:^",
