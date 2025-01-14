@@ -3589,6 +3589,28 @@
 		],
 		"genre": "POPS & ANIME"
 	},
+	"183": {
+		"name": "euphoric field（English）",
+		"ver": "v1 1.45.00",
+		"composer": "ELISA「ef - a tale of memories.」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.8
+			}
+		]
+	},
 	"184": {
 		"name": "Last regrets",
 		"ver": "v1 1.05.00",
@@ -8323,6 +8345,31 @@
 			}
 		]
 	},
+	"417": {
+		"name": "Redo",
+		"ver": "v1 1.15.00",
+		"composer": "鈴木このみ「Re:ゼロから始める異世界生活」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.8
+			},
+			{
+				"lv": 13.7
+			}
+		]
+	},
 	"419": {
 		"name": "SAKURAスキップ",
 		"ver": "v1 1.20.00",
@@ -10290,6 +10337,28 @@
 			}
 		]
 	},
+	"526": {
+		"name": "ようこそジャパリパークへ",
+		"ver": "v1 1.20.00",
+		"composer": "どうぶつビスケッツ×PPP「けものフレンズ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.2
+			}
+		]
+	},
 	"528": {
 		"name": "チルノのパーフェクトさんすう教室　⑨周年バージョン",
 		"ver": "v1 1.20.00",
@@ -11390,6 +11459,28 @@
 			},
 			{
 				"lv": 13.8
+			}
+		]
+	},
+	"584": {
+		"name": "Love your enemies",
+		"ver": "v1 1.35.00",
+		"composer": "分島花音「劇場版selector destructed WIXOSS」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.8
 			}
 		]
 	},
@@ -13112,6 +13203,94 @@
 			}
 		]
 	},
+	"672": {
+		"name": "Blooming Villain (ATLUS Konishi Remix)",
+		"ver": "v1 1.30.00",
+		"composer": "目黒将司 Remixed by 小西利樹「ペルソナ5 ダンシング・スターナイト」",
+		"genre": "VARIETY",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 13.3
+			}
+		]
+	},
+	"673": {
+		"name": "GROOVY",
+		"ver": "v1 1.30.00",
+		"composer": "小塚良太「ペルソナ5 ダンシング・スターナイト」",
+		"genre": "VARIETY",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 13
+			}
+		]
+	},
+	"674": {
+		"name": "Mass Destruction (\"P3\" + \"P3F\" ver.)",
+		"ver": "v1 1.30.00",
+		"composer": "目黒将司「ペルソナ3 ダンシング・ムーンナイト」",
+		"genre": "VARIETY",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.2
+			}
+		]
+	},
+	"675": {
+		"name": "全ての人の魂の戦い (Daisuke Asakura Remix)",
+		"ver": "v1 1.30.00",
+		"composer": "目黒将司 Remixed by 浅倉大介「ペルソナ3 ダンシング・ムーンナイト」",
+		"genre": "VARIETY",
+		"worldsEndStars": "0",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 12.8
+			}
+		]
+	},
 	"676": {
 		"name": "Nhelv",
 		"ver": "v1 1.30.00",
@@ -14743,6 +14922,50 @@
 			}
 		]
 	},
+	"758": {
+		"name": "TREAT OR TREAT?",
+		"ver": "v1 1.35.00",
+		"composer": "4U「Tokyo 7th シスターズ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 13.7
+			}
+		]
+	},
+	"759": {
+		"name": "TRIGGER",
+		"ver": "v1 1.35.00",
+		"composer": "The QUEEN of PURPLE「Tokyo 7th シスターズ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 13.1
+			}
+		]
+	},
 	"760": {
 		"name": "カゲロウデイズ",
 		"ver": "v1 1.35.00",
@@ -15139,6 +15362,28 @@
 		],
 		"genre": "POPS & ANIME"
 	},
+	"779": {
+		"name": "WORLD'S END",
+		"ver": "v1 1.35.00",
+		"composer": "セブンスシスターズ「Tokyo 7th シスターズ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.4
+			}
+		]
+	},
 	"780": {
 		"name": "METEOR",
 		"ver": "v1 1.35.00",
@@ -15334,6 +15579,28 @@
 			},
 			{
 				"lv": 15.2
+			}
+		]
+	},
+	"789": {
+		"name": "NEVER SURRENDER",
+		"ver": "v1 1.35.00",
+		"composer": "水樹奈々「魔法少女リリカルなのは Detonation」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.1
 			}
 		]
 	},
@@ -15670,6 +15937,28 @@
 		],
 		"genre": "POPS & ANIME"
 	},
+	"809": {
+		"name": "grilletto",
+		"ver": "v1 1.40.00",
+		"composer": "GARNiDELiA「魔法科高校の劣等生」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 11.8
+			}
+		]
+	},
 	"810": {
 		"name": "UNION",
 		"ver": "v1 1.40.00",
@@ -15689,6 +15978,94 @@
 			},
 			{
 				"lv": 12
+			}
+		]
+	},
+	"811": {
+		"name": "Lemon",
+		"ver": "v1 1.40.00",
+		"composer": "米津玄師",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 4
+			},
+			{
+				"lv": 7.5
+			},
+			{
+				"lv": 10.5
+			}
+		]
+	},
+	"812": {
+		"name": "BURST THE GRAVITY",
+		"ver": "v1 1.40.00",
+		"composer": "ALTIMA「アクセル・ワールド」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.3
+			}
+		]
+	},
+	"813": {
+		"name": "ヒプノシスマイク -Division Battle Anthem-",
+		"ver": "v1 1.40.00",
+		"composer": "Division All Stars「ヒプノシスマイク」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.5
+			}
+		]
+	},
+	"814": {
+		"name": "ハッピー☆マテリアル",
+		"ver": "v1 1.40.00",
+		"composer": "麻帆良学園中等部2-A「魔法先生ネギま！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.3
 			}
 		]
 	},
@@ -16383,6 +16760,28 @@
 			}
 		]
 	},
+	"847": {
+		"name": "Baby Sweet Berry Love",
+		"ver": "v1 1.40.00",
+		"composer": "小倉 唯「変態王子と笑わない猫。」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 11.4
+			}
+		]
+	},
 	"848": {
 		"name": "進捗どうですか？",
 		"ver": "v1 1.40.00",
@@ -16537,6 +16936,28 @@
 			}
 		]
 	},
+	"855": {
+		"name": "Deal with the devil",
+		"ver": "v1 1.40.00",
+		"composer": "Tia「賭ケグルイ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 13.4
+			}
+		]
+	},
 	"856": {
 		"name": "Star Divine",
 		"ver": "v1 1.40.00",
@@ -16556,6 +16977,28 @@
 			},
 			{
 				"lv": 12.1
+			}
+		]
+	},
+	"857": {
+		"name": "輪舞-revolution",
+		"ver": "v1 1.40.00",
+		"composer": "奥井雅美「少女革命ウテナ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 10.7
 			}
 		]
 	},
@@ -16625,6 +17068,50 @@
 			}
 		]
 	},
+	"861": {
+		"name": "気ままな天使たち",
+		"ver": "v1 1.40.00",
+		"composer": "わたてん☆5「私に天使が舞い降りた！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 11.2
+			}
+		]
+	},
+	"862": {
+		"name": "ハッピー・ハッピー・フレンズ",
+		"ver": "v1 1.40.00",
+		"composer": "わたてん☆5「私に天使が舞い降りた！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.7
+			}
+		]
+	},
 	"863": {
 		"name": "AXION",
 		"ver": "v1 1.40.00",
@@ -16666,6 +17153,28 @@
 			},
 			{
 				"lv": 14.7
+			}
+		]
+	},
+	"866": {
+		"name": "ストライク・ザ・ブラッド",
+		"ver": "v1 1.40.00",
+		"composer": "岸田教団&THE明星ロケッツ「ストライク・ザ・ブラッド」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 7
+			},
+			{
+				"lv": 10.9
+			},
+			{
+				"lv": 13.7
 			}
 		]
 	},
@@ -17021,6 +17530,50 @@
 			}
 		]
 	},
+	"883": {
+		"name": "徒花ネクロマンシー",
+		"ver": "v1 1.40.00",
+		"composer": "フランシュシュ「ゾンビランドサガ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 12.4
+			}
+		]
+	},
+	"884": {
+		"name": "目覚めRETURNER",
+		"ver": "v1 1.40.00",
+		"composer": "フランシュシュ「ゾンビランドサガ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.3
+			}
+		]
+	},
 	"885": {
 		"name": "Ladymade Star",
 		"ver": "v1 1.40.00",
@@ -17134,6 +17687,28 @@
 			}
 		]
 	},
+	"890": {
+		"name": "nowhere",
+		"ver": "v1 1.40.00",
+		"composer": "FictionJunction YUUKA｢MADLAX｣",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 10.9
+			}
+		]
+	},
 	"891": {
 		"name": "音弾超人ゴリライザー",
 		"ver": "v1 1.40.00",
@@ -17153,6 +17728,28 @@
 			},
 			{
 				"lv": 13.9
+			}
+		]
+	},
+	"892": {
+		"name": "Bull's Eye",
+		"ver": "v1 1.40.00",
+		"composer": "ナノ「緋弾のアリアAA」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 13.7
 			}
 		]
 	},
@@ -17329,6 +17926,138 @@
 			},
 			{
 				"lv": 12.4
+			}
+		]
+	},
+	"902": {
+		"name": "HELLO to DREAM",
+		"ver": "v1 1.45.00",
+		"composer": "井口裕香「ダンジョンに出会いを求めるのは間違っているだろうかⅡ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11
+			}
+		]
+	},
+	"903": {
+		"name": "君色Everyday",
+		"ver": "v1 1.45.00",
+		"composer": "ヘスティア（CV:水瀬いのり）「ダンジョンに出会いを求めるのは間違っているだろうか」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.5
+			}
+		]
+	},
+	"904": {
+		"name": "お願いマッスル",
+		"ver": "v1 1.45.00",
+		"composer": "紗倉ひびき（CV:ファイルーズあい）＆街雄鳴造（CV:石川界人）「ダンベル何キロ持てる？」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.5
+			}
+		]
+	},
+	"905": {
+		"name": "紅蓮華",
+		"ver": "v1 1.45.00",
+		"composer": "LiSA",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.8
+			}
+		]
+	},
+	"907": {
+		"name": "五等分の気持ち",
+		"ver": "v1 1.45.00",
+		"composer": "中野家の五つ子（花澤香菜・竹達彩奈・伊藤美来・佐倉綾音・水瀬いのり） TVアニメ「五等分の花嫁」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 11.3
+			}
+		]
+	},
+	"908": {
+		"name": "God knows...",
+		"ver": "v1 1.45.00",
+		"composer": "涼宮ハルヒ（CV.平野 綾） TVアニメ「涼宮ハルヒの憂鬱」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.5
 			}
 		]
 	},
@@ -17552,6 +18281,50 @@
 			}
 		]
 	},
+	"919": {
+		"name": "Ray ―はじまりのセカイ― (クロニクルアレンジver.)",
+		"ver": "v1 1.45.00",
+		"composer": "山崎寛子「白猫プロジェクト」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.6
+			}
+		]
+	},
+	"920": {
+		"name": "狩猟戦旗～REQUIEM",
+		"ver": "v1 1.45.00",
+		"composer": "「白猫プロジェクト」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 14.2
+			}
+		]
+	},
 	"921": {
 		"name": "メルティランドナイトメア",
 		"ver": "v1 1.45.00",
@@ -17615,6 +18388,50 @@
 			},
 			{
 				"lv": 12.6
+			}
+		]
+	},
+	"924": {
+		"name": "アイドル活動！オンパレード！ver.",
+		"ver": "v1 1.45.00",
+		"composer": "らき・あいね・みお from BEST FRIENDS！/わか・るか・せな「アイカツオンパレード！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.7
+			}
+		]
+	},
+	"925": {
+		"name": "ダイヤモンドハッピー",
+		"ver": "v1 1.45.00",
+		"composer": "わか・ふうり・すなお from STAR☆ANIS「アイカツ！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 12.7
 			}
 		]
 	},
@@ -18168,6 +18985,50 @@
 			}
 		]
 	},
+	"951": {
+		"name": "かっとばせ！未来へ",
+		"ver": "v1 1.45.00",
+		"composer": "HUiT「八月のシンデレラナイン」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 11.4
+			}
+		]
+	},
+	"952": {
+		"name": "ALL FOR ONE★",
+		"ver": "v1 1.45.00",
+		"composer": "Clutch!「八月のシンデレラナイン」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.7
+			}
+		]
+	},
 	"953": {
 		"name": "グリーンライツ・セレナーデ",
 		"ver": "v1 1.45.00",
@@ -18231,6 +19092,50 @@
 			},
 			{
 				"lv": 11.9
+			}
+		]
+	},
+	"956": {
+		"name": "killy killy JOKER",
+		"ver": "v1 1.45.00",
+		"composer": "分島花音「selector infected WIXOSS」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12
+			}
+		]
+	},
+	"957": {
+		"name": "Lostorage",
+		"ver": "v1 1.45.00",
+		"composer": "井口裕香「Lostorage incited WIXOSS」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.3
 			}
 		]
 	},
@@ -18341,6 +19246,72 @@
 			},
 			{
 				"lv": 11.7
+			}
+		]
+	},
+	"963": {
+		"name": "チャージマン研！",
+		"ver": "v1 1.45.00",
+		"composer": "歌：ひばり児童合唱団、作曲：宮内國郎、作詞：ナック企画部「チャージマン研！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 12.6
+			}
+		]
+	},
+	"964": {
+		"name": "殺人レコード恐怖のメロディ",
+		"ver": "v1 1.45.00",
+		"composer": "作曲：宮内國郎「チャージマン研！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 10.2
+			},
+			{
+				"lv": 14.1
+			}
+		]
+	},
+	"965": {
+		"name": "禁じられた遊び",
+		"ver": "v1 1.45.00",
+		"composer": "ALI PROJECT「ローゼンメイデン」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.8
 			}
 		]
 	},
@@ -18586,6 +19557,28 @@
 			}
 		]
 	},
+	"977": {
+		"name": "今宵mofumofu!!",
+		"ver": "v1 1.45.00",
+		"composer": "仙狐（CV：和氣あず未）、シロ（CV：内田真礼）「世話やきキツネの仙狐さん」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.5
+			}
+		]
+	},
 	"978": {
 		"name": "Ascension to Heaven",
 		"ver": "v1 1.45.00",
@@ -18737,6 +19730,28 @@
 			},
 			{
 				"lv": 11.8
+			}
+		]
+	},
+	"986": {
+		"name": "さよならエレジー",
+		"ver": "v1 1.45.00",
+		"composer": "菅田将暉",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.4
 			}
 		]
 	},
@@ -18982,6 +19997,50 @@
 			}
 		]
 	},
+	"1000": {
+		"name": "Pretender",
+		"ver": "v1 1.50.00",
+		"composer": "Official髭男dism",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11
+			}
+		]
+	},
+	"1001": {
+		"name": "ごまかし",
+		"ver": "v1 1.50.00",
+		"composer": "TrySail",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 12.1
+			}
+		]
+	},
 	"1002": {
 		"name": "だから僕は音楽を辞めた",
 		"ver": "v1 1.50.00",
@@ -19001,6 +20060,28 @@
 			},
 			{
 				"lv": 11.8
+			}
+		]
+	},
+	"1003": {
+		"name": "真赤な誓い",
+		"ver": "v1 1.50.00",
+		"composer": "福山芳樹「武装錬金」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.7
 			}
 		]
 	},
@@ -19312,6 +20393,28 @@
 			}
 		]
 	},
+	"1018": {
+		"name": "モノノケ・イン・ザ・フィクション",
+		"ver": "v1 1.50.00",
+		"composer": "嘘とカメレオン「虚構推理」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.9
+			}
+		]
+	},
 	"1019": {
 		"name": "愛されなくても君がいる",
 		"ver": "v1 1.50.00",
@@ -19419,6 +20522,28 @@
 			},
 			{
 				"lv": 11.9
+			}
+		]
+	},
+	"1024": {
+		"name": "キラメキライダー☆",
+		"ver": "v1 1.50.00",
+		"composer": "hololive IDOL PROJECT",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 12.8
 			}
 		]
 	},
@@ -19642,6 +20767,28 @@
 			}
 		]
 	},
+	"1036": {
+		"name": "甲賀忍法帖",
+		"ver": "v1 1.50.00",
+		"composer": "陰陽座",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.8
+			}
+		]
+	},
 	"1037": {
 		"name": "Everything For A Reason",
 		"ver": "v1 1.50.00",
@@ -19818,6 +20965,50 @@
 			}
 		]
 	},
+	"1045": {
+		"name": "町かどタンジェント",
+		"ver": "v1 1.55.00",
+		"composer": "shami momo（吉田優子・千代田桃）／CV：小原好美・鬼頭明里「まちカドまぞく」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 11.5
+			}
+		]
+	},
+	"1046": {
+		"name": "歩いていこう！",
+		"ver": "v1 1.50.00",
+		"composer": "東山奈央「恋する小惑星」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 1
+			},
+			{
+				"lv": 4
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.2
+			}
+		]
+	},
 	"1048": {
 		"name": "ぷよぷよのうた ピコピコミックス",
 		"ver": "v1 1.55.00",
@@ -19837,6 +21028,116 @@
 			},
 			{
 				"lv": 13.7
+			}
+		]
+	},
+	"1049": {
+		"name": "君のせい",
+		"ver": "v1 1.50.00",
+		"composer": "the peggies「青春ブタ野郎はバニーガール先輩の夢を見ない」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 11.9
+			}
+		]
+	},
+	"1050": {
+		"name": "Phantom Joke",
+		"ver": "v1 1.50.00",
+		"composer": "UNISON SQUARE GARDEN",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 10.3
+			},
+			{
+				"lv": 13.6
+			}
+		]
+	},
+	"1051": {
+		"name": "脳裏上のクラッカー",
+		"ver": "v1 1.55.00",
+		"composer": "ずっと真夜中でいいのに。",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8
+			},
+			{
+				"lv": 11.8
+			}
+		]
+	},
+	"1053": {
+		"name": "もってけ!セーラーふく",
+		"ver": "v1 1.55.00",
+		"composer": "泉こなた（CV.平野 綾）、柊かがみ（CV.加藤英美里）、柊つかさ（CV.福原香織）、高良みゆき（CV.遠藤 綾）「らき☆すた」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9
+			},
+			{
+				"lv": 12.3
+			}
+		]
+	},
+	"1054": {
+		"name": "サクリファイス",
+		"ver": "v1 1.55.00",
+		"composer": "まふまふ",
+		"genre": "niconico",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 7
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 13.4
 			}
 		]
 	},
@@ -20676,6 +21977,28 @@
 			}
 		]
 	},
+	"1093": {
+		"name": "Paradise Lost",
+		"ver": "v1 1.55.00",
+		"composer": "茅原実里",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 12.3
+			}
+		]
+	},
 	"1094": {
 		"name": "[CRYSTAL_ACCESS]",
 		"ver": "v2 2.00.00",
@@ -20695,6 +22018,28 @@
 			},
 			{
 				"lv": 14.6
+			}
+		]
+	},
+	"1095": {
+		"name": "Deep in Abyss",
+		"ver": "v1 1.55.00",
+		"composer": "リコ（CV：富田美憂）、レグ（CV：伊瀬茉莉也）「メイドインアビス」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 2
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 8.5
+			},
+			{
+				"lv": 11.8
 			}
 		]
 	},
@@ -22763,6 +24108,28 @@
 			},
 			{
 				"lv": 14.4
+			}
+		]
+	},
+	"2088": {
+		"name": "乙女のルートはひとつじゃない！",
+		"ver": "v1 1.55.00",
+		"composer": "angela「乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 5
+			},
+			{
+				"lv": 9.5
+			},
+			{
+				"lv": 11.5
 			}
 		]
 	},
@@ -29677,6 +31044,28 @@
 			}
 		]
 	},
+	"2419": {
+		"name": "ゴー・トゥ・大都会",
+		"ver": "v2 2.15.00",
+		"composer": "月裏, ニャン・トンロン",
+		"genre": "niconico",
+		"worldsEndStars": "1",
+		"worldsEndTag": "Invalid",
+		"notes": [
+			{
+				"lv": 3
+			},
+			{
+				"lv": 6
+			},
+			{
+				"lv": 11.3
+			},
+			{
+				"lv": 14.1
+			}
+		]
+	},
 	"2420": {
 		"name": "Shine In The Sky☆",
 		"ver": "v2 2.15.00",
@@ -35336,6 +36725,24 @@
 		"notes": [],
 		"genre": "ORIGINAL"
 	},
+	"8080": {
+		"name": "Schrecklicher Aufstand",
+		"ver": "v1 1.15.00",
+		"composer": "Katzeohr & Spiegel",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "9",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
+	"8081": {
+		"name": "檄!帝国華撃団",
+		"ver": "v1 1.15.00",
+		"composer": "真宮寺さくら（横山智佐）＆帝国歌劇団「サクラ大戦」",
+		"genre": "VARIETY",
+		"worldsEndStars": "3",
+		"worldsEndTag": "歌",
+		"notes": []
+	},
 	"8082": {
 		"name": "神威",
 		"ver": "v1 1.15.00",
@@ -35380,6 +36787,15 @@
 		"worldsEndTag": "招",
 		"notes": [],
 		"genre": "VARIETY"
+	},
+	"8087": {
+		"name": "Air",
+		"ver": "v1 1.15.00",
+		"composer": "SHIKI",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "狂",
+		"notes": []
 	},
 	"8088": {
 		"name": "言ノ葉カルマ",
@@ -35543,6 +36959,15 @@
 		"notes": [],
 		"genre": "ORIGINAL"
 	},
+	"8108": {
+		"name": "G e n g a o z o",
+		"ver": "v1 1.20.00",
+		"composer": "-45",
+		"genre": "VARIETY",
+		"worldsEndStars": "9",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
 	"8109": {
 		"name": "睡蓮花",
 		"ver": "v1 1.20.00",
@@ -35569,6 +36994,15 @@
 		"worldsEndTag": "招",
 		"notes": [],
 		"genre": "POPS & ANIME"
+	},
+	"8112": {
+		"name": "HAELEQUIN (Original Remaster)",
+		"ver": "v1 1.25.00",
+		"composer": "orangentle",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "両",
+		"notes": []
 	},
 	"8113": {
 		"name": "Theme of SeelischTact",
@@ -35678,6 +37112,15 @@
 		"notes": [],
 		"genre": "ORIGINAL"
 	},
+	"8126": {
+		"name": "macrocosmos",
+		"ver": "v1 1.25.00",
+		"composer": "LeaF",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "9",
+		"worldsEndTag": "？",
+		"notes": []
+	},
 	"8127": {
 		"name": "Devastating Blaster",
 		"ver": "v1 1.25.00",
@@ -35703,6 +37146,15 @@
 		"genre": "ゲキマイ",
 		"worldsEndTag": "舞",
 		"worldsEndStars": "5",
+		"notes": []
+	},
+	"8130": {
+		"name": "初音ミクの激唱",
+		"ver": "v1 1.30.00",
+		"composer": "Storyteller",
+		"genre": "niconico",
+		"worldsEndStars": "7",
+		"worldsEndTag": "招",
 		"notes": []
 	},
 	"8131": {
@@ -35822,6 +37274,15 @@
 		"notes": [],
 		"genre": "POPS & ANIME"
 	},
+	"8144": {
+		"name": "裏表ラバーズ",
+		"ver": "v1 1.30.00",
+		"composer": "wowaka",
+		"genre": "niconico",
+		"worldsEndStars": "7",
+		"worldsEndTag": "！",
+		"notes": []
+	},
 	"8145": {
 		"name": "Twice up Scenery",
 		"ver": "v1 1.30.00",
@@ -35912,6 +37373,15 @@
 		"notes": [],
 		"genre": "東方Project"
 	},
+	"8155": {
+		"name": "Starlight Dance Floor",
+		"ver": "v1 1.35.00",
+		"composer": "発熱巫女～ず",
+		"genre": "東方Project",
+		"worldsEndStars": "3",
+		"worldsEndTag": "両",
+		"notes": []
+	},
 	"8156": {
 		"name": "Dreaming",
 		"ver": "v1 1.35.00",
@@ -35948,6 +37418,15 @@
 		"worldsEndStars": "7",
 		"notes": []
 	},
+	"8160": {
+		"name": "頓珍漢の宴",
+		"ver": "v1 1.35.00",
+		"composer": "ピノキオピー",
+		"genre": "niconico",
+		"worldsEndStars": "7",
+		"worldsEndTag": "両",
+		"notes": []
+	},
 	"8161": {
 		"name": "WAVE",
 		"ver": "v1 1.35.00",
@@ -35965,6 +37444,24 @@
 		"worldsEndTag": "？",
 		"notes": [],
 		"genre": "niconico"
+	},
+	"8163": {
+		"name": "ぼくらの16bit戦争",
+		"ver": "v1 1.35.00",
+		"composer": "sasakure.UK",
+		"genre": "niconico",
+		"worldsEndStars": "7",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
+	"8164": {
+		"name": "Aragami",
+		"ver": "v1 1.35.00",
+		"composer": "xi",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "蔵",
+		"notes": []
 	},
 	"8165": {
 		"name": "Surveiller et punir",
@@ -36011,6 +37508,15 @@
 		"notes": [],
 		"genre": "POPS & ANIME"
 	},
+	"8170": {
+		"name": "DETARAME ROCK&ROLL THEORY",
+		"ver": "v1 1.40.00",
+		"composer": "箱部 なる(CV:M・A・O)",
+		"genre": "イロドリミドリ",
+		"worldsEndStars": "5",
+		"worldsEndTag": "蔵",
+		"notes": []
+	},
 	"8171": {
 		"name": "volcanic",
 		"ver": "v1 1.40.00",
@@ -36028,6 +37534,15 @@
 		"worldsEndTag": "両",
 		"notes": [],
 		"genre": "ORIGINAL"
+	},
+	"8173": {
+		"name": "玩具狂奏曲 -終焉-",
+		"ver": "v1 1.40.00",
+		"composer": "きくお",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "敷",
+		"notes": []
 	},
 	"8174": {
 		"name": "電光石火",
@@ -36056,6 +37571,24 @@
 		"notes": [],
 		"genre": "東方Project"
 	},
+	"8177": {
+		"name": "【東方ニコカラ】秘神マターラ feat.魂音泉【IOSYS】",
+		"ver": "v1 1.40.00",
+		"composer": "ARM (IOSYS)",
+		"genre": "東方Project",
+		"worldsEndStars": "7",
+		"worldsEndTag": "布",
+		"notes": []
+	},
+	"8178": {
+		"name": "ひれ伏せ愚民どもっ！",
+		"ver": "v1 1.40.00",
+		"composer": "ARM＋夕野ヨシミ (IOSYS) feat.miko",
+		"genre": "東方Project",
+		"worldsEndStars": "5",
+		"worldsEndTag": "跳",
+		"notes": []
+	},
 	"8179": {
 		"name": "Dreaming",
 		"ver": "v1 1.40.00",
@@ -36083,6 +37616,24 @@
 		"notes": [],
 		"genre": "イロドリミドリ"
 	},
+	"8182": {
+		"name": "Life",
+		"ver": "v1 1.45.00",
+		"composer": "Relect",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "3",
+		"worldsEndTag": "両",
+		"notes": []
+	},
+	"8183": {
+		"name": "チョウの標本",
+		"ver": "v1 1.45.00",
+		"composer": "Bitplane",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "蔵",
+		"notes": []
+	},
 	"8184": {
 		"name": "あ・え・い・う・え・お・あお!!",
 		"ver": "v1 1.45.00",
@@ -36099,6 +37650,42 @@
 		"genre": "niconico",
 		"worldsEndTag": "割",
 		"worldsEndStars": "3",
+		"notes": []
+	},
+	"8186": {
+		"name": "Dengeki Tube",
+		"ver": "v1 1.45.00",
+		"composer": "BACO",
+		"genre": "VARIETY",
+		"worldsEndStars": "5",
+		"worldsEndTag": "避",
+		"notes": []
+	},
+	"8187": {
+		"name": "WORLD'S END",
+		"ver": "v1 1.45.00",
+		"composer": "セブンスシスターズ「Tokyo 7th シスターズ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "7",
+		"worldsEndTag": "招",
+		"notes": []
+	},
+	"8188": {
+		"name": "Ai Nov",
+		"ver": "v1 1.45.00",
+		"composer": "Feryquitous",
+		"genre": "ゲキマイ",
+		"worldsEndStars": "3",
+		"worldsEndTag": "撃",
+		"notes": []
+	},
+	"8189": {
+		"name": "bubble attack",
+		"ver": "v1 1.45.00",
+		"composer": "HALFBY",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "覚",
 		"notes": []
 	},
 	"8190": {
@@ -36128,6 +37715,42 @@
 		"notes": [],
 		"genre": "ORIGINAL"
 	},
+	"8194": {
+		"name": "エピクロスの虹はもう見えない",
+		"ver": "v1 1.45.00",
+		"composer": "SYNC.ART'S feat.美里",
+		"genre": "東方Project",
+		"worldsEndStars": "7",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8195": {
+		"name": "Blessed",
+		"ver": "v1 1.45.00",
+		"composer": "Palme",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "？",
+		"notes": []
+	},
+	"8196": {
+		"name": "Gate of Fate",
+		"ver": "v1 1.45.00",
+		"composer": "Godspeed",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "改",
+		"notes": []
+	},
+	"8197": {
+		"name": "ZEUS",
+		"ver": "v1 1.45.00",
+		"composer": "ルゼ",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
 	"8198": {
 		"name": "巫女みこナース・愛のテーマ",
 		"ver": "v1 1.50.00",
@@ -36135,6 +37758,24 @@
 		"genre": "POPS & ANIME",
 		"worldsEndTag": "狂",
 		"worldsEndStars": "3",
+		"notes": []
+	},
+	"8199": {
+		"name": "Taiko Drum Monster",
+		"ver": "v1 1.50.00",
+		"composer": "steμ feat.siroa「太鼓の達人」より",
+		"genre": "VARIETY",
+		"worldsEndStars": "5",
+		"worldsEndTag": "招",
+		"notes": []
+	},
+	"8200": {
+		"name": "Imperishable Night 2006 (2016 Refine)",
+		"ver": "v1 1.50.00",
+		"composer": "ゆうゆ / 篠螺悠那",
+		"genre": "東方Project",
+		"worldsEndStars": "7",
+		"worldsEndTag": "両",
 		"notes": []
 	},
 	"8201": {
@@ -36146,6 +37787,24 @@
 		"worldsEndStars": "7",
 		"notes": []
 	},
+	"8202": {
+		"name": "輪舞-revolution",
+		"ver": "v1 1.50.00",
+		"composer": "奥井雅美「少女革命ウテナ」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "3",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8203": {
+		"name": "G e n g a o z o",
+		"ver": "v1 1.50.00",
+		"composer": "-45",
+		"genre": "VARIETY",
+		"worldsEndStars": "5",
+		"worldsEndTag": "覚",
+		"notes": []
+	},
 	"8204": {
 		"name": "Memory of Beach",
 		"ver": "v1 1.50.00",
@@ -36154,6 +37813,15 @@
 		"worldsEndTag": "招",
 		"notes": [],
 		"genre": "VARIETY"
+	},
+	"8205": {
+		"name": "《逃避》 ～ The Deserter",
+		"ver": "v1 1.50.00",
+		"composer": "Bo-Xun Lin 林柏勲",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "避",
+		"notes": []
 	},
 	"8206": {
 		"name": "恋はりんりん☆あーりんベル",
@@ -36173,6 +37841,33 @@
 		"notes": [],
 		"genre": "POPS & ANIME"
 	},
+	"8212": {
+		"name": "LINK LINK FEVER!!!",
+		"ver": "v1 1.55.00",
+		"composer": "リンカ (CV: 豊田萌絵)「グルーヴコースター」",
+		"genre": "VARIETY",
+		"worldsEndStars": "1",
+		"worldsEndTag": "招",
+		"notes": []
+	},
+	"8213": {
+		"name": "チャージマン研！",
+		"ver": "v2 2.00.00",
+		"composer": "歌：ひばり児童合唱団、作曲：宮内國郎、作詞：ナック企画部「チャージマン研！」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "3",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
+	"8214": {
+		"name": "D✪N’T ST✪P R✪CKIN’ ～[✪_✪] MIX～",
+		"ver": "v2 2.00.00",
+		"composer": "EB (aka EarBreaker)",
+		"genre": "ゲキマイ",
+		"worldsEndStars": "5",
+		"worldsEndTag": "両",
+		"notes": []
+	},
 	"8215": {
 		"name": "Viyella's Tears",
 		"ver": "v2 2.00.00",
@@ -36189,6 +37884,24 @@
 		"genre": "ORIGINAL",
 		"worldsEndTag": "蔵",
 		"worldsEndStars": "5",
+		"notes": []
+	},
+	"8217": {
+		"name": "五等分の気持ち",
+		"ver": "v2 2.00.00",
+		"composer": "中野家の五つ子（花澤香菜・竹達彩奈・伊藤美来・佐倉綾音・水瀬いのり） TVアニメ「五等分の花嫁」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "3",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8218": {
+		"name": "BLUE ZONE",
+		"ver": "v2 2.00.00",
+		"composer": "Tatsh x NAOKI",
+		"genre": "VARIETY",
+		"worldsEndStars": "3",
+		"worldsEndTag": "敷",
 		"notes": []
 	},
 	"8219": {
@@ -36209,6 +37922,60 @@
 		"worldsEndStars": "5",
 		"notes": []
 	},
+	"8221": {
+		"name": "もってけ!セーラーふく",
+		"ver": "v2 2.00.00",
+		"composer": "泉こなた（CV.平野 綾）、柊かがみ（CV.加藤英美里）、柊つかさ（CV.福原香織）、高良みゆき（CV.遠藤 綾）「らき☆すた」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "5",
+		"worldsEndTag": "止",
+		"notes": []
+	},
+	"8222": {
+		"name": "お願いマッスル",
+		"ver": "v2 2.00.00",
+		"composer": "紗倉ひびき（CV:ファイルーズあい）＆街雄鳴造（CV:石川界人）「ダンベル何キロ持てる？」",
+		"genre": "POPS & ANIME",
+		"worldsEndStars": "5",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8223": {
+		"name": "U ARE",
+		"ver": "v2 2.00.00",
+		"composer": "MK&Kanae Asaba",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "3",
+		"worldsEndTag": "両",
+		"notes": []
+	},
+	"8224": {
+		"name": "真千年女王",
+		"ver": "v2 2.00.00",
+		"composer": "しらいし",
+		"genre": "VARIETY",
+		"worldsEndStars": "5",
+		"worldsEndTag": "半",
+		"notes": []
+	},
+	"8225": {
+		"name": "タテマエと本心の大乱闘",
+		"ver": "v2 2.00.00",
+		"composer": "曲：鯨井国家／歌：藍原 椿(CV：橋本 ちなみ)",
+		"genre": "ゲキマイ",
+		"worldsEndStars": "3",
+		"worldsEndTag": "撃",
+		"notes": []
+	},
+	"8226": {
+		"name": "砂漠のハンティングガール♡",
+		"ver": "v2 2.00.00",
+		"composer": "海田 明里",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "弾",
+		"notes": []
+	},
 	"8227": {
 		"name": "Trackless wilderness",
 		"ver": "v2 2.00.00",
@@ -36226,6 +37993,15 @@
 		"worldsEndTag": "狂",
 		"notes": [],
 		"genre": "ORIGINAL"
+	},
+	"8229": {
+		"name": "《本能》 ～ ReCoda",
+		"ver": "v1 1.55.00",
+		"composer": "Spiegel vs Yukino",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "5",
+		"worldsEndTag": "半",
+		"notes": []
 	},
 	"8230": {
 		"name": "董卓討つべし",
@@ -36245,6 +38021,15 @@
 		"worldsEndStars": "5",
 		"notes": []
 	},
+	"8232": {
+		"name": "音弾超人ゴリライザー",
+		"ver": "v1 1.55.00",
+		"composer": "ゴリライザー制作委員会",
+		"genre": "VARIETY",
+		"worldsEndStars": "5",
+		"worldsEndTag": "狂",
+		"notes": []
+	},
 	"8233": {
 		"name": "宙の隣",
 		"ver": "v2 2.05.00",
@@ -36253,6 +38038,33 @@
 		"worldsEndTag": "？",
 		"notes": [],
 		"genre": "ORIGINAL"
+	},
+	"8234": {
+		"name": "きゅうりバーにダイブ",
+		"ver": "v2 2.05.00",
+		"composer": "ゆずひこ feat.めらみぽっぷ",
+		"genre": "東方Project",
+		"worldsEndStars": "1",
+		"worldsEndTag": "光",
+		"notes": []
+	},
+	"8235": {
+		"name": "XL TECHNO -More Dance Remix-",
+		"ver": "v2 2.05.00",
+		"composer": "from PACA PACA PASSION Special",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8236": {
+		"name": "Elemental Ethnic",
+		"ver": "v2 2.05.00",
+		"composer": "Yooh",
+		"genre": "ORIGINAL",
+		"worldsEndStars": "3",
+		"worldsEndTag": "止",
+		"notes": []
 	},
 	"8237": {
 		"name": "アルストロメリア",
@@ -36270,6 +38082,24 @@
 		"genre": "niconico",
 		"worldsEndTag": "両",
 		"worldsEndStars": "3",
+		"notes": []
+	},
+	"8239": {
+		"name": "ダブルラリアット",
+		"ver": "v2 2.05.00",
+		"composer": "アゴアニキ",
+		"genre": "niconico",
+		"worldsEndStars": "1",
+		"worldsEndTag": "割",
+		"notes": []
+	},
+	"8240": {
+		"name": "]-[|/34<#!",
+		"ver": "v2 2.05.00",
+		"composer": "並木学（ナミキマナブ）「怒首領蜂大復活」",
+		"genre": "VARIETY",
+		"worldsEndStars": "7",
+		"worldsEndTag": "跳",
 		"notes": []
 	},
 	"8241": {

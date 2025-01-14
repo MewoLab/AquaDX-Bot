@@ -15,10 +15,28 @@ export type UserMusic = {
 	'extNum1': number
 }
 
+export type UserMusicChuni = {
+	musicId: number,
+	level: number,
+	playCount: number,
+	scoreMax: number,
+	missCount: number,
+	maxComboCount: number,
+	fullChain: number,
+	maxChain: number,
+	scoreRank: number,
+	theoryCount: number,
+	ext1: number,
+	isFullCombo: boolean,
+	isAllJustice: boolean,
+	isSuccess: number,
+	isLock: boolean
+}
+
 export type RatingListEntry = {
 	'musicId': number,
 	'level': number,
-	'romVersion': number,
+	'romVersion'?: number,
 	'achievement': number
 }
 
@@ -32,6 +50,12 @@ export type UserCombinedRating = {
 	best35: RatingListEntry[],
 	best15: RatingListEntry[],
 	musicList: UserMusic[]
+}
+
+export type UserCombinedRatingChuni = {
+	best30: RatingListEntry[],
+	recent10: RatingListEntry[],
+	musicList: UserMusicChuni[]
 }
 
 export interface UserPreview extends UserPreviewSummary {
@@ -237,3 +261,5 @@ export interface BotEnv extends Env {
 }
 
 export type MaiVersion = 140 | 145
+
+

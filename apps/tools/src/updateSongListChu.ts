@@ -28,7 +28,7 @@ for (const opt of [path.join(baseDir, 'data', 'A000'), ...optionDirs.map(d => pa
 		}
 
 		music.name = meta.MusicData.name.str.toString();
-		// console.log(music.name);
+		console.log(music.name);
 		music.ver = meta.MusicData.releaseTagName.str.toString();
 		music.composer = meta.MusicData.artistName.str.toString();
 		music.genre = meta.MusicData.genreNames.list.StringID.str.toString();

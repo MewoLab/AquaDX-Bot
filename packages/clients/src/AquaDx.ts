@@ -65,4 +65,31 @@ export default class AquaDx extends UserSource {
 			lastRomVersion: res.lastVersion
 		};
 	}
+
+	public override async getChuniUserMusic(username: string, musicIdList: number[]) {
+		return await this.fetch('/api/v2/game/chu3/user-music-from-list', { username }, 'POST', musicIdList);
+	}
+
+	public override async getChuniUserRating(username: string) {
+		const data = await this.fetch('/api/v2/game/chu3/user-rating', { username });
+		for (const key of ['best30', 'recent10']) {
+			data[key] = data[key].map(([musicId, level, achievement]) => ({
+				musicId: parseInt(musicId),
+				level: parseInt(level),
+				achievement: parseInt(achievement)
+			}));
+		}
+		return data;
+	}
+
+	public override async getChuniUserPreview(username: string) {
+		const res = await this.fetch('/api/v2/game/chu3/user-summary', { username });
+
+		// 只需要返回这两个
+		return {
+			userName: res.name,
+			playerRating: res.rating,
+			lastRomVersion: res.lastVersion
+		};
+	}
 }

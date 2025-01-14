@@ -1,7 +1,8 @@
 const commandListBase = [
-	{ command: 'search', description: '搜索歌曲信息' },
-	{ command: 'b50', description: '生成 B50 成绩图' },
-	{ command: 'query', description: '查询自己某首歌的成绩' },
+	{ command: 'search', description: '搜索 Maimai DX 歌曲信息' },
+	{ command: 'chuni', description: '搜索中二节奏歌曲信息' },
+	{ command: 'b50', description: '生成 Maimai DX B50 成绩图' },
+	{ command: 'query', description: '查询自己 Maimai DX 某首歌的成绩' },
 	{ command: 'help', description: '查看一些帮助信息' }
 ] as const;
 

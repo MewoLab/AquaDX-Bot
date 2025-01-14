@@ -1,4 +1,4 @@
-import { Nameplate, UserCombinedRating, UserMusic, UserPreview, UserPreviewSummary, UserRating } from '@clansty/maibot-types';
+import { Nameplate, UserCombinedRating, UserCombinedRatingChuni, UserMusic, UserMusicChuni, UserPreview, UserPreviewSummary, UserRating } from '@clansty/maibot-types';
 
 export abstract class UserSource {
 	protected constructor(protected readonly baseUrl: string) {
@@ -73,11 +73,15 @@ export abstract class UserSource {
 
 	public abstract getNameplate(userId: number | string): Promise<Nameplate>;
 
-	public async getChuniUserMusic(userId: number | string, musicIdList: number[]) {
+	public async getChuniUserMusic(userId: number | string, musicIdList: number[]): Promise<UserMusicChuni[]> {
 		throw new Error('不支持的账号类型');
 	}
 
-	public async getChuniUserRating(userId: number | string, musicIdList: number[]) {
+	public async getChuniUserRating(userId: number | string): Promise<UserCombinedRatingChuni> {
+		throw new Error('不支持的账号类型');
+	}
+
+	public async getChuniUserPreview(userId: number | string): Promise<UserPreviewSummary> {
 		throw new Error('不支持的账号类型');
 	}
 }
