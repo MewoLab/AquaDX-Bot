@@ -1,9 +1,18 @@
-import { RatingListEntry, UserMusic, Song, Nameplate as NameplateData, UserCombinedRating, MaiVersion, BUDDIES_PLUS_LOGO, BUDDIES_LOGO, Chart } from '@clansty/maibot-types';
+import { RatingListEntry, UserMusic, Song, Nameplate as NameplateData, UserCombinedRating, MaiVersion, BUDDIES_PLUS_LOGO, BUDDIES_LOGO, Chart, PRISM_LOGO } from '@clansty/maibot-types';
 import B50Song from './B50Song';
 import { computeRa, ratingAnalyse } from '@clansty/maibot-utils';
 import styles from './B50.module.css';
 import Nameplate from '~/components/Nameplate';
 import { component$ } from '@builder.io/qwik';
+
+const getLogoByVersion = (ver: MaiVersion) => {
+	switch (ver) {
+		case 150: return PRISM_LOGO;
+		case 145: return BUDDIES_PLUS_LOGO;
+		case 140: return BUDDIES_LOGO;
+		default: return BUDDIES_LOGO;
+	}
+};
 
 export default component$(({ rating, user, ver }: { rating: UserCombinedRating, user: NameplateData, ver: MaiVersion }) =>
 	<div style={{ padding: '0 20px' }}>
@@ -12,7 +21,7 @@ export default component$(({ rating, user, ver }: { rating: UserCombinedRating, 
 				<Nameplate user={user} />
 			</div>
 			<div class={`${styles.hideOnSmallScreen} grow`} />
-			<img class={styles.hideOnSmallScreen} src={ver === 145 ? BUDDIES_PLUS_LOGO : BUDDIES_LOGO} alt="" height={120} />
+			<img class={styles.hideOnSmallScreen} src={getLogoByVersion(ver)} alt="" height={120} />
 		</div>
 
 		<RatingTable rating={rating.best35} userMusic={rating.musicList} title="旧版本 Best 35" ver={ver} />

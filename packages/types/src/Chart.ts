@@ -21,17 +21,21 @@ export default class Chart implements Sheet {
 	public constructor(data: Sheet,
 		dataFromAllMusic?: typeof ALL_MUSIC[number],
 		internalId?: number,
-		public readonly ver: MaiVersion = 145
+		public readonly ver: MaiVersion = 150
 	) {
 		const dataCopy = { ...data };
 		delete dataCopy.level;
 		Object.assign(this, dataCopy);
 		const level140 = this.multiverInternalLevelValue?.BUDDiES;
 		const level145 = this.multiverInternalLevelValue?.['BUDDiES PLUS'];
+		const level150 = this.multiverInternalLevelValue?.['PRiSM'];
 		if (level140 && ver === 140) {
 			this.internalLevelValue = level140;
 		}
 		if (level145 && ver === 145) {
+			this.internalLevelValue = level145;
+		}
+		if (level150 && ver === 150) {
 			this.internalLevelValue = level145;
 		}
 		const valueFromAllMusic = dataFromAllMusic?.notes[LEVEL_EN.indexOf(data.difficulty)]?.lv;
@@ -41,6 +45,9 @@ export default class Chart implements Sheet {
 		}
 		if (valueFromAllMusic && this.internalLevelValue !== valueFromAllMusic) {
 			this.internalLevelValue = Math.max(valueFromAllMusic, this.internalLevelValue);
+		}
+		if (!this.internalLevelValue && valueFromAllMusic) {
+			this.internalLevelValue = valueFromAllMusic;
 		}
 		// if (this.internalLevelValue !== valueFromAllMusic) {
 		// 	console.log('发现了定数错误', dataFromAllMusic?.name, data.type, data.difficulty, '来自 DXRating.net 的定数:', data.internalLevelValue, '来自 all-music.json 的定数:', valueFromAllMusic);

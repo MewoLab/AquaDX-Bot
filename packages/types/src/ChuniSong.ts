@@ -68,7 +68,7 @@ export default class ChuniSong {
 		return new this(id, dataFromAllMusic);
 	}
 
-	public static search(kw: string, ver: MaiVersion = 145) {
+	public static search(kw: string, ver: MaiVersion = 150) {
 		const results = [] as ChuniSong[];
 		if (Number(kw)) {
 			const song = this.fromId(Number(kw));

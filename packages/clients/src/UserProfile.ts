@@ -1,4 +1,4 @@
-import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto } from '@clansty/maibot-types';
+import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto, PRISM_LOGO, PLATE_MUSIC_LIST_150 } from '@clansty/maibot-types';
 import { UserSource } from './UserSource';
 import AquaDxLegacy from './AquaDxLegacy';
 import SdgbProxied from './SdgbProxied';
@@ -67,10 +67,12 @@ export class UserProfile {
 		switch (this.region) {
 			case 'jp':
 				switch (await this.getVersion()) {
-					case 140:
-						return PLATE_MUSIC_LIST_JP;
+					case 150:
+						return PLATE_MUSIC_LIST_150;
 					case 145:
 						return PLATE_MUSIC_LIST_145;
+					case 140:
+						return PLATE_MUSIC_LIST_JP;
 				}
 				return PLATE_MUSIC_LIST_JP;
 			case 'cn':
@@ -86,16 +88,19 @@ export class UserProfile {
 			case 'SDGB':
 				return 140;
 			case 'SDGA':
-				return 145;
+				return 150;
 			case 'AquaDX':
 			case 'AquaDX-v2':
 				try {
 					const preview = await this.getUserPreview();
 					const version = Number(preview.lastRomVersion.split('.')[1]);
+					console.log('User version:', version);
 					if (version < 45)
 						return 140;
-					else
+					else if (version < 50)
 						return 145;
+					else
+						return 150;
 				} catch (e) {
 					console.error('Failed to get user version', e);
 					return 140;
@@ -117,6 +122,8 @@ export class UserProfile {
 				return BUDDIES_LOGO;
 			case 145:
 				return BUDDIES_PLUS_LOGO;
+			case 150:
+				return PRISM_LOGO;
 		}
 	}
 
