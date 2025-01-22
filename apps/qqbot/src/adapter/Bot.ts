@@ -136,6 +136,8 @@ export class BotAdapter extends Bot<BotTypes> {
 		const at = data.message.find(it => it.type === 'at');
 		const text = data.message.find(it => it.type === 'text')?.data.text.trim();
 		if (!text) return;
+		// q2tg 新的 header，防止触发两次 bot
+		if (data.message.some(it => it.type === 'image')) return;
 
 		if ('group_id' in data && at && at.data.qq.toString() === this.env.OFFICIAL_BOT_UIN.toString()) {
 			// 检查融合模式
