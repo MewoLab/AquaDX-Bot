@@ -52,7 +52,7 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile }: Build
 
 		bot.registerKeyword(RegExp(`^\\/?${level.replace('+', '\\+')} ?(进度|完成[图表])$`), async (event) => {
 			const ctx = getContext(event);
-			await sendProgressImage(ctx, event.fromId, event.isPrivate, level, true);
+			await sendProgressImage(ctx, event.fromId, event.isPrivate, level);
 			return true;
 		});
 	}
