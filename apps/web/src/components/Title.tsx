@@ -19,7 +19,7 @@ export default component$(({ name, rare }: { name: string, rare: string }) =>
             border-color: #94B5E2
         }
 
-        .titleRare-titleRare-Gold {
+        .titleRare-Gold {
             background-image: linear-gradient(to top, #FABF05 40%, #FFDF4B 40%);
             border-color: #FABF05
         }
