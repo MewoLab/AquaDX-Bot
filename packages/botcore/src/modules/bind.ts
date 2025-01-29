@@ -48,7 +48,7 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile, enableO
 			}
 		} else if (!isNaN(Number(param))) { // is number
 			await event.reply()
-				.setText('现在请使用有户名绑定 AquaDX 的账号')
+				.setText('现在请使用用户名绑定 AquaDX 的账号')
 				.dispatch();
 			// profile = await UserProfile.create({ type: 'AquaDX', userId: Number(param) }, env);
 		} else if (param.startsWith('SGWCMAI' + 'D') && param.length === 64 + 8 + 12 && enableOfficialServers) {
