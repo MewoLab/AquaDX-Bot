@@ -1,12 +1,11 @@
-import { Rank, RatingListEntry, UserMusic } from '@clansty/maibot-types';
-import { Song } from '@clansty/maibot-types';
-import { IMG_DX, IMG_MOON_CAKE, IMG_SONG_MISSING, IMG_STD, LEVEL_COLOR } from '@clansty/maibot-types';
+import { IMG_DX, IMG_MOON_CAKE, IMG_SONG_MISSING, IMG_STD, LEVEL_COLOR, Rank, RatingListEntry, Song, UserMusic } from '@clansty/maibot-types';
 import { achievementToRank, computeRa } from '@clansty/maibot-utils';
 import Digit from '~/components/Digit';
 import { component$ } from '@builder.io/qwik';
+import { ASSET_TYPE, getAssetUrl } from '@clansty/maibot-utils/src/getAssetUrl';
 
 const getRankImage = (rank: Rank): string => {
-	return `https://shama.dxrating.net/images/rank/buddies-plus/${rank}.png`;
+	return getAssetUrl(ASSET_TYPE.Base, `UI_TTR_Rank_${rank.toUpperCase().replace('P', 'p')}`);
 };
 
 const BORDER_SIZE = 3;
