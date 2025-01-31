@@ -1,0 +1,24 @@
+.hideOnSmallScreen {
+  @media (max-width: 1320px) {
+    display: none;
+  }
+}
+
+.hideOnSmallScreen2 {
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.header {
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.title {
+  @media (max-width: 1060px) {
+    font-size: 50px;
+  }
+}

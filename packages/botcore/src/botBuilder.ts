@@ -12,6 +12,7 @@ import musicSearch from './modules/musicSearch';
 import admin from './modules/admin';
 import exportUserMusic from './modules/exportUserMusic';
 import musicSearchChu from './modules/musicSearchChu';
+import levelScores from './modules/levelScores';
 
 interface BuilderEnvBase<T extends BotTypes> {
 	bot: Bot<T>,
@@ -36,7 +37,7 @@ export const buildBot = <T extends BotTypes>(env: BuilderEnvBase<T>) => {
 		)
 	} satisfies BuilderEnv<T>;
 
-	for (const attachHandlers of [callbackQuery, help, bind, scoreQuery, plateProgress, levelProgress, /* levelConstTable, */ b50, exportUserMusic, musicSearchChu, musicSearch, admin]) {
+	for (const attachHandlers of [callbackQuery, help, bind, scoreQuery, plateProgress, levelProgress, levelScores, /* levelConstTable, */ b50, exportUserMusic, musicSearchChu, musicSearch, admin]) {
 		attachHandlers(passEnv);
 	}
 };
