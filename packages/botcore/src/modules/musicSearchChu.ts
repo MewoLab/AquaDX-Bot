@@ -16,10 +16,11 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile }: Build
 		const answer = event.answer()
 			.withCacheTime(60);
 		await Promise.all(results.map(async song => {
-				if (musicToFile[song.id]) {
-					answer.addAudioResult(`chu:${song.id}` || song.title, musicToFile[song.id])
-						.setText(song.display);
-				} else if (song.coverUrl) {
+				// if (musicToFile[song.id]) {
+				// 	answer.addAudioResult(`chu:${song.id}` || song.title, musicToFile[song.id])
+				// 		.setText(song.display);
+				// } else 
+				if (song.coverUrl) {
 					answer.addPhotoResult(`chu:${song.id}` || song.title, song.coverUrl)
 						.setTitle(song.title)
 						.setText(song.display);
@@ -37,17 +38,17 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile }: Build
 
 		const msgTitle = song.display.substring(0, song.display.indexOf('\n'));
 		const msgText = song.display.substring(song.display.indexOf('\n') + 1).trim();
-		if (musicToFile[song.id]) {
-			req.addAudio(musicToFile[song.id]);
-		} else if (song.coverUrl) {
-			req
-				.addPhoto(song.coverUrl)
-				.setTemplatedMessage(MESSAGE_TEMPLATE.MusicInfo, {
-					title: msgTitle,
-					content: msgText,
-					image: song.coverUrl
-				});
-		}
+		// if (musicToFile[song.id]) {
+		// 	req.addAudio(musicToFile[song.id]);
+		// } else if (song.coverUrl) {
+		req
+			.addPhoto(song.coverUrl)
+			.setTemplatedMessage(MESSAGE_TEMPLATE.MusicInfo, {
+				title: msgTitle,
+				content: msgText,
+				image: song.coverUrl
+			});
+		// }
 
 		await req.setText(song.display).dispatch();
 	};

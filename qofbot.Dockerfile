@@ -2,7 +2,6 @@ FROM node:22-slim AS build
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
 
 WORKDIR /app
 
@@ -19,6 +18,7 @@ COPY packages/adapters/package.json /app/packages/adapters/
 
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store,sharing=locked \
     --mount=type=secret,id=npmrc,target=/root/.npmrc \
+    npm i -g pnpm@9.15.2 && \
     pnpm install --frozen-lockfile
 
 COPY packages /app/packages

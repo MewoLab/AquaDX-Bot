@@ -29,3 +29,22 @@ export const computeRa = (ds: number, achievement: number): number => {
 	}
 	return Math.floor(ds * (Math.min(100.5, achievement / 1e4) / 100) * baseRa);
 };
+
+function _chusanRating(lv: number, score: number) {
+	lv = lv * 100;
+	if (score >= 1009000) return lv + 215; // SSS+
+	if (score >= 1007500) return lv + 200 + (score - 1007500) / 100; // SSS
+	if (score >= 1005000) return lv + 150 + (score - 1005000) / 50; // SS+
+	if (score >= 1000000) return lv + 100 + (score - 1000000) / 100; // SS
+	if (score >= 975000) return lv + (score - 975000) / 250; // S+, S
+	if (score >= 925000) return lv - 300 + (score - 925000) * 3 / 500; // AA
+	if (score >= 900000) return lv - 500 + (score - 900000) * 4 / 500; // A
+	if (score >= 800000) return ((lv - 500) / 2 + (score - 800000) * ((lv - 500) / 2) / (100000)); // BBB
+	return 0; // C
+}
+
+export function chusanRating(lv: number, score: number) {
+	let original = _chusanRating(lv, score);
+	original = Math.floor(original);
+	return original / 100;
+}

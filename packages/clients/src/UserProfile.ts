@@ -1,4 +1,4 @@
-import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto, PRISM_LOGO, PLATE_MUSIC_LIST_150 } from '@clansty/maibot-types';
+import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto, PRISM_LOGO, PLATE_MUSIC_LIST_150, ChuniSong } from '@clansty/maibot-types';
 import { UserSource } from './UserSource';
 import AquaDxLegacy from './AquaDxLegacy';
 import SdgbProxied from './SdgbProxied';
@@ -161,5 +161,25 @@ export class UserProfile {
 
 	async getNameplate() {
 		return this.client.getNameplate(this.userId);
+	}
+
+	async getChuniUserMusic(musicIdList: (number | ChuniSong)[]) {
+		const convertedList = [] as number[];
+		for (const music of musicIdList) {
+			if (music instanceof ChuniSong) {
+				convertedList.push(music.id);
+			} else {
+				convertedList.push(music);
+			}
+		}
+		return this.client.getChuniUserMusic(this.userId, convertedList);
+	}
+
+	async getChuniUserRating() {
+		return this.client.getChuniUserRating(this.userId);
+	}
+
+	async getChuniUserPreview() {
+		return this.client.getChuniUserPreview(this.userId);
 	}
 }

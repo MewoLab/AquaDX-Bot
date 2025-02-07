@@ -4,6 +4,7 @@ import { CHU_LEVEL_EMOJI as LEVEL_EMOJI } from './consts';
 import { MaiVersion } from './types';
 import { ASSET_TYPE, getAssetUrl } from '@clansty/maibot-utils/src/getAssetUrl';
 
+// TODO https://chunithm.anontokyo.com/alias
 export default class ChuniSong {
 	name: string;
 	ver: string;
@@ -68,7 +69,7 @@ export default class ChuniSong {
 		return new this(id, dataFromAllMusic);
 	}
 
-	public static search(kw: string, ver: MaiVersion = 150) {
+	public static search(kw: string) {
 		const results = [] as ChuniSong[];
 		if (Number(kw)) {
 			const song = this.fromId(Number(kw));
