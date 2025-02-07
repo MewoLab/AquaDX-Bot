@@ -1,5 +1,6 @@
 import { BotTypes } from '@clansty/maibot-firm';
 import { BuilderEnv } from '../botBuilder';
+import * as repl from 'node:repl';
 
 export default <T extends BotTypes>({ bot, env, getContext, musicToFile, enableOfficialServers }: BuilderEnv<T>) => {
 	const INLINE_HELP = `行内模式说明
@@ -40,10 +41,16 @@ ${enableOfficialServers ? `本 Bot 主要基于 AquaDX.Net 制作，同时支持
 	});
 
 	bot.registerCommand('help', async (event) => {
-		await event.reply()
+		const reply = event.reply()
 			.setHtml(BASE_HELP)
-			.disableLinkPreview()
-			.dispatch();
+			.disableLinkPreview();
+		reply.addBundledMessage()
+			.setPrompt('[帮助]')
+			.setTitle('AquaDX Bot 帮助')
+			.setSummary('点击打开查看')
+			.addNode()
+			.setHtml(BASE_HELP);
+		await reply.dispatch();
 		return true;
 	});
 
