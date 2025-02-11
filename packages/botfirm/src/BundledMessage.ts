@@ -34,11 +34,16 @@ export abstract class BundledMessageNodeBase<T extends BotTypes> extends BaseTex
 	protected _file: T['SendableFile'] = null;
 	protected _fileType: 'audio' | 'document' | 'photo' = null;
 	protected _bundledMessage: BundledMessageBase<T> = null;
+	protected _markdown: string = null;
 
 	public addPhoto(file: T['SendableFile']) {
 		this._fileType = 'photo';
 		this._file = file;
 		return this;
+	}
+
+	public setQQMarkdown(text: string) {
+		this._markdown = text;
 	}
 
 	public abstract addBundledMessage(): BundledMessageBase<T>;

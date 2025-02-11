@@ -68,6 +68,14 @@ export class BundledMessageNode extends BundledMessageNodeBase<BotTypes> {
 			// @ts-ignore
 			params.content = params.message;
 		}
+		if(this._markdown) {
+			params.content.push({
+				type: 'markdown',
+				data: {
+					content: this._markdown
+				}
+			});
+		}
 
 		return {
 			type: 'node',

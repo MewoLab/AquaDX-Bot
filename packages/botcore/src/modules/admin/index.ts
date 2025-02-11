@@ -29,12 +29,26 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile }: Build
 
 		const card = event.params[0];
 		const req = await client.debugUserProfile(card);
-		const data = await req.json();
+		const data = await req.json() as { card: { id: number, luid: string, extId: number }, games: object[] }[];
 		const enc = new TextEncoder();
 
-		await event.reply()
-			.addDocument(bot.constructFile(enc.encode(JSON.stringify(data, null, 2)), `${card}.json`))
-			.dispatch();
+		const reply = event.reply();
+		try {
+			reply.addDocument(bot.constructFile(enc.encode(JSON.stringify(data, null, 2)), `${card}.json`));
+		} catch (e) {
+		}
+
+		const bundle = reply.addBundledMessage();
+		bundle.setTitle(`找到的卡片数量: ${data.length}`);
+		for (const { card, games } of data) {
+			const sub = bundle.addNode().addBundledMessage().setTitle(`卡片 ${card.luid}`).setDescription(`游戏数量: ${games.length}`);
+			sub.addNode().setQQMarkdown('```json\n' + JSON.stringify(card, null, 2) + '\n```');
+			for (const game of games) {
+				sub.addNode().setQQMarkdown('```json\n' + JSON.stringify(game, null, 2) + '\n```');
+			}
+		}
+
+		await reply.dispatch();
 
 		return true;
 	});
