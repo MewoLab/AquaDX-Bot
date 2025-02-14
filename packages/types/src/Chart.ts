@@ -36,7 +36,7 @@ export default class Chart implements Sheet {
 			this.internalLevelValue = level145;
 		}
 		if (level150 && ver === 150) {
-			this.internalLevelValue = level145;
+			this.internalLevelValue = level150;
 		}
 		const valueFromAllMusic = dataFromAllMusic?.notes[LEVEL_EN.indexOf(data.difficulty)]?.lv;
 		if (this.regions && !Object.values(this.regions).some(Boolean)) {
@@ -48,6 +48,9 @@ export default class Chart implements Sheet {
 		}
 		if (!this.internalLevelValue && valueFromAllMusic) {
 			this.internalLevelValue = valueFromAllMusic;
+		}
+		if (!this.internalLevelValue) {
+			this.internalLevelValue = 0;
 		}
 		// if (this.internalLevelValue !== valueFromAllMusic) {
 		// 	console.log('发现了定数错误', dataFromAllMusic?.name, data.type, data.difficulty, '来自 DXRating.net 的定数:', data.internalLevelValue, '来自 all-music.json 的定数:', valueFromAllMusic);

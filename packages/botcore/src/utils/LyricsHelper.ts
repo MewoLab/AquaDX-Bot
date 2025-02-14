@@ -15,7 +15,7 @@ type Lyrics = {
 
 const WIKI_URL = 'https://silentblue.remywiki.com';
 const WIKI_NAME = 'SilentBlue Wiki';
-const NETEASE_API = 'https://neteasecloudmusicapi.vercel.app';
+const NETEASE_API = 'https://api-mymusic.vercel.app';
 
 export default class LyricsHelper {
 	private readonly geniusClient: Genius.Client;
