@@ -21,7 +21,7 @@ export default class Chart implements Sheet {
 	public constructor(data: Sheet,
 		dataFromAllMusic?: typeof ALL_MUSIC[number],
 		internalId?: number,
-		public readonly ver: MaiVersion = 150
+		public readonly ver: MaiVersion = 155
 	) {
 		const dataCopy = { ...data };
 		delete dataCopy.level;
@@ -29,6 +29,7 @@ export default class Chart implements Sheet {
 		const level140 = this.multiverInternalLevelValue?.BUDDiES;
 		const level145 = this.multiverInternalLevelValue?.['BUDDiES PLUS'];
 		const level150 = this.multiverInternalLevelValue?.['PRiSM'];
+		const level155 = this.multiverInternalLevelValue?.['PRiSM PLUS'];
 		if (level140 && ver === 140) {
 			this.internalLevelValue = level140;
 		}
@@ -37,6 +38,9 @@ export default class Chart implements Sheet {
 		}
 		if (level150 && ver === 150) {
 			this.internalLevelValue = level150;
+		}
+		if (level155 && ver === 155) {
+			this.internalLevelValue = level155;
 		}
 		const valueFromAllMusic = dataFromAllMusic?.notes[LEVEL_EN.indexOf(data.difficulty)]?.lv;
 		if (this.regions && !Object.values(this.regions).some(Boolean)) {

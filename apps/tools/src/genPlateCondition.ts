@@ -2,8 +2,8 @@ import { XMLParser } from 'fast-xml-parser';
 import fs from 'node:fs';
 import fsP from 'node:fs/promises';
 
-const PLATE_NAME = '真超檄橙晓桃樱紫堇白雪辉舞熊华爽煌宙星祭祝双宴'.split('');
-const PLATE_NAME_GAME = '真超檄橙暁桃櫻紫菫白雪輝舞熊華爽煌宙星祭祝双宴'.split('');
+const PLATE_NAME = '真超檄橙晓桃樱紫堇白雪辉舞熊华爽煌宙星祭祝双宴镜'.split('');
+const PLATE_NAME_GAME = '真超檄橙暁桃櫻紫菫白雪輝舞熊華爽煌宙星祭祝双宴鏡'.split('');
 
 const baseDir = process.argv[2];
 const parser = new XMLParser();

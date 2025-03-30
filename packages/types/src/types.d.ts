@@ -260,6 +260,6 @@ export interface BotEnv extends Env {
 	DEEPL_AUTH_KEY: string;
 }
 
-export type MaiVersion = 140 | 145 | 150
+export type MaiVersion = 140 | 145 | 150 | 155
 
 

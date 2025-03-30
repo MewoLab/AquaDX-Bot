@@ -1,4 +1,4 @@
-import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto, PRISM_LOGO, PLATE_MUSIC_LIST_150, ChuniSong } from '@clansty/maibot-types';
+import { BUDDIES_LOGO, BUDDIES_PLUS_LOGO, GameVariantPlateMusicList, MaiVersion, PLATE_MUSIC_LIST_145, PLATE_MUSIC_LIST_CN, PLATE_MUSIC_LIST_JP, Regions, Env, Song, UserPreviewSummary, UserProfileDto, PRISM_LOGO, PLATE_MUSIC_LIST_150, ChuniSong, PLATE_MUSIC_LIST_155 } from '@clansty/maibot-types';
 import { UserSource } from './UserSource';
 import AquaDxLegacy from './AquaDxLegacy';
 import SdgbProxied from './SdgbProxied';
@@ -67,6 +67,8 @@ export class UserProfile {
 		switch (this.region) {
 			case 'jp':
 				switch (await this.getVersion()) {
+					case 155:
+						return PLATE_MUSIC_LIST_155;
 					case 150:
 						return PLATE_MUSIC_LIST_150;
 					case 145:
@@ -99,11 +101,13 @@ export class UserProfile {
 						return 140;
 					else if (version < 50)
 						return 145;
-					else
+					else if (version < 55)
 						return 150;
+					else
+						return 155;
 				} catch (e) {
 					console.error('Failed to get user version', e);
-					return 140;
+					return 150;
 				}
 		}
 	}

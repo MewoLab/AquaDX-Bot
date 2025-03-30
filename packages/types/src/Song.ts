@@ -1,7 +1,7 @@
 import { CategoryEnum, DifficultyEnum, dxdata, Regions, Song as DataSong, TypeEnum } from '@gekichumai/dxdata';
 import Chart from './Chart';
 import _ from 'lodash';
-import { ALL_MUSIC, ALL_MUSIC_140, ALL_MUSIC_145, JACKET_EXIST_IDS } from '@clansty/maibot-data';
+import { ALL_MUSIC, ALL_MUSIC_140, ALL_MUSIC_145, ALL_MUSIC_150, JACKET_EXIST_IDS } from '@clansty/maibot-data';
 import { LEVEL, LEVEL_EN } from './consts';
 import { MaiVersion } from './types';
 import { ASSET_TYPE, getAssetUrl } from '@clansty/maibot-utils/src/getAssetUrl';
@@ -25,13 +25,15 @@ export default class Song implements DataSong {
 		public readonly dx?: boolean,
 		// 指 DXRating 中没有的歌
 		public readonly unlisted = false,
-		public readonly ver: MaiVersion = 150
+		public readonly ver: MaiVersion = 155
 	) {
 		Object.assign(this, data);
 
 		let allMusic: typeof ALL_MUSIC;
-		if (ver === 150) {
+		if (ver === 155) {
 			allMusic = ALL_MUSIC;
+		} else if (ver === 150) {
+			allMusic = ALL_MUSIC_150;
 		} else if (ver === 145) {
 			allMusic = ALL_MUSIC_145;
 		} else if (ver === 140) {
@@ -142,10 +144,12 @@ export default class Song implements DataSong {
 		return message;
 	}
 
-	public static fromId(id: number, ver: MaiVersion = 150) {
+	public static fromId(id: number, ver: MaiVersion = 155) {
 		let allMusic: typeof ALL_MUSIC;
-		if (ver === 150) {
+		if (ver === 155) {
 			allMusic = ALL_MUSIC;
+		} else if (ver === 150) {
+			allMusic = ALL_MUSIC_150;
 		} else if (ver === 145) {
 			allMusic = ALL_MUSIC_145;
 		} else if (ver === 140) {
@@ -197,7 +201,7 @@ export default class Song implements DataSong {
 		}, dx, true, ver);
 	}
 
-	public static search(kw: string, ver: MaiVersion = 150) {
+	public static search(kw: string, ver: MaiVersion = 155) {
 		const results = [] as Song[];
 		if (Number(kw)) {
 			const song = this.fromId(Number(kw), ver);
@@ -221,7 +225,7 @@ export default class Song implements DataSong {
 		return _.uniqBy(results, (it) => `${it.id}_${it.title}`);
 	}
 
-	public static getByCondition(condition: (song: Song) => boolean, ver: MaiVersion = 150, officialOnly = true) {
+	public static getByCondition(condition: (song: Song) => boolean, ver: MaiVersion = 155, officialOnly = true) {
 		let tmp = Song.getAllSongs(ver);
 		if (officialOnly) {
 			tmp = tmp.filter(song => song.id < 2000);
@@ -231,7 +235,7 @@ export default class Song implements DataSong {
 	}
 
 	public static allIds = _.uniq(Object.keys(ALL_MUSIC).map(Number).map(it => it % 1e4));
-	public static getAllSongs = (ver: MaiVersion = 150) => Song.allIds.map(id => Song.fromId(id, ver)).filter(it => it);
+	public static getAllSongs = (ver: MaiVersion = 155) => Song.allIds.map(id => Song.fromId(id, ver)).filter(it => it);
 
 	public getChart(difficulty: DifficultyEnum | number | typeof LEVEL[number], dx = this.dx) {
 		if (LEVEL.includes(difficulty as any)) {
