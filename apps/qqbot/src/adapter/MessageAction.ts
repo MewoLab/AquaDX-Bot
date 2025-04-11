@@ -47,7 +47,7 @@ export class SendMessageAction extends SendMessageActionBase<BotTypes> {
 			};
 		}
 
-		if (this._replyToMessageId) {
+		if (this._replyToMessageId && !this._replyToMessageId) {
 			params.message.push({
 				type: 'reply',
 				data: {
@@ -73,6 +73,14 @@ export class SendMessageAction extends SendMessageActionBase<BotTypes> {
 				break;
 		}
 
+		if (this._jsonMessage) {
+			params.message.push({
+				type: 'json',
+				data: {
+					data: this._jsonMessage
+				}
+			});
+		}
 		if (this._text) {
 			params.message.push({
 				type: 'text',

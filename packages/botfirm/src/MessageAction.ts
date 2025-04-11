@@ -55,6 +55,7 @@ export abstract class SendMessageAction<T extends BotTypes> extends Dispatchable
 	protected _fileType: 'audio' | 'document' | 'photo' = null;
 	protected _templatedMessage: TemplatedMessage<T> = null;
 	protected _bundledMessage: BundledMessageBase<T> = null;
+	protected _jsonMessage: string = null;
 
 	public addPhoto(file: T['SendableFile']) {
 		this._fileType = 'photo';
@@ -78,6 +79,12 @@ export abstract class SendMessageAction<T extends BotTypes> extends Dispatchable
 	public addBundledMessage() {
 		this._bundledMessage = new DummyBundledMessage(this.bot);
 		return this._bundledMessage;
+	}
+
+	// 仅在 QQ 中支持
+	public setJsonMessage(json: string) {
+		this._jsonMessage = json;
+		return this;
 	}
 
 	// 仅在 QQ 官 Bot 中支持，弃用
