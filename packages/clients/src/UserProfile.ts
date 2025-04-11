@@ -4,6 +4,7 @@ import AquaDxLegacy from './AquaDxLegacy';
 import SdgbProxied from './SdgbProxied';
 import AquaDx from './AquaDx';
 import { SdgaProxied } from './index';
+import Minato from './Minato';
 
 export class UserProfile {
 	private constructor(private readonly _type: UserProfileDto['type'],
@@ -31,6 +32,11 @@ export class UserProfile {
 			case 'AquaDX-v2':
 				client = new AquaDx();
 				userId = dto.username;
+				break;
+			case 'Minato':
+				client = new Minato();
+				userId = dto.username;
+				break;
 		}
 
 		return new this(dto.type, userId, client, dto);
@@ -42,6 +48,8 @@ export class UserProfile {
 				return 'AquaDX (Legacy)';
 			case 'AquaDX-v2':
 				return 'AquaDX';
+			case 'Minato':
+				return 'Minato（测试）';
 			case 'SDGB':
 				return '国服';
 			case 'SDGA':
@@ -55,6 +63,7 @@ export class UserProfile {
 		switch (this._type) {
 			case 'AquaDX':
 			case 'AquaDX-v2':
+			case 'Minato':
 			case 'SDGA':
 				return 'jp';
 			case 'SDGB':
@@ -93,6 +102,7 @@ export class UserProfile {
 				return 150;
 			case 'AquaDX':
 			case 'AquaDX-v2':
+			case 'Minato':
 				try {
 					const preview = await this.getUserPreview();
 					const version = Number(preview.lastRomVersion.split('.')[1]);

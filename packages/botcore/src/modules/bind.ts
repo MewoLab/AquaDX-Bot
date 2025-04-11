@@ -32,7 +32,9 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile, enableO
 			return true;
 		}
 
-		const param = event.params.join('');
+		const minato = event.params.includes('--minato');
+
+		const param = event.params.filter(it => it !== '--minato').join('');
 		let profile: UserProfile;
 
 		if (/^\d{20}$/.test(param) && enableOfficialServers) { // is AIME
@@ -62,6 +64,8 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile, enableO
 					.dispatch();
 				return true;
 			}
+		} else if (minato) {
+			profile = await UserProfile.create({ type: 'Minato', username: param }, env);
 		} else {
 			profile = await UserProfile.create({ type: 'AquaDX-v2', username: param }, env);
 		}

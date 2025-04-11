@@ -160,6 +160,11 @@ export default class Song implements DataSong {
 		const dx = id > 1e4;
 		id %= 1e4;
 		let song = dxdata.songs.find(song => song.sheets.some(sheet => sheet.internalId === id || sheet.internalId === id + 1e4));
+		if (song && dx && !song.sheets.some(it => it.type === TypeEnum.DX)) {
+			song = null;
+		} else if (song && !dx && !song.sheets.some(it => it.type === TypeEnum.STD)) {
+			song = null;
+		}
 		if (song) return new this(song, dx, false, ver);
 
 		const dataFromAllMusic = allMusic[id] || allMusic[id + 1e4];
@@ -167,6 +172,11 @@ export default class Song implements DataSong {
 
 		song = dxdata.songs.find(song => song.title === dataFromAllMusic.name) ||
 			dxdata.songs.find(song => song.title.toLowerCase() === dataFromAllMusic.name.toLowerCase());
+		if (song && dx && !song.sheets.some(it => it.type === TypeEnum.DX)) {
+			song = null;
+		} else if (song && !dx && !song.sheets.some(it => it.type === TypeEnum.STD)) {
+			song = null;
+		}
 		if (song) return new this(song, dx, false, ver);
 
 		const sheets = dataFromAllMusic.notes.map((chart, index) => new Chart({
@@ -225,7 +235,7 @@ export default class Song implements DataSong {
 		return _.uniqBy(results, (it) => `${it.id}_${it.title}`);
 	}
 
-	public static getByCondition(condition: (song: Song) => boolean, ver: MaiVersion = 155, officialOnly = true) {
+	public static getByCondition(condition: (song: Song) => boolean, ver: MaiVersion = 155, officialOnly = true): Song[] {
 		let tmp = Song.getAllSongs(ver);
 		if (officialOnly) {
 			tmp = tmp.filter(song => song.id < 2000);

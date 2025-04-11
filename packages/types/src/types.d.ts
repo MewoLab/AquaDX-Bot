@@ -216,6 +216,11 @@ export type UserProfileDtoAquaDxV2 = {
 	type: 'AquaDX-v2',
 }
 
+export type UserProfileDtoMinato = {
+	username: string,
+	type: 'Minato',
+}
+
 export type UserProfileDtoSdgb = {
 	userId: number,
 	type: 'SDGB',
@@ -235,7 +240,7 @@ export type UserProfileDtoAnyAqua = {
 	type: 'AnyAqua',
 }
 
-export type UserProfileDto = UserProfileDtoAquaDx | UserProfileDtoSdgb | UserProfileDtoAquaDxV2 | UserProfileDtoSdga
+export type UserProfileDto = UserProfileDtoAquaDx | UserProfileDtoSdgb | UserProfileDtoAquaDxV2 | UserProfileDtoSdga | UserProfileDtoMinato
 
 export type UserProfilesKVStorage = {
 	profiles: UserProfileDto[],
