@@ -9,6 +9,7 @@
     "build.client": "vite build",
     "deploy": "pnpm run build && wrangler pages deploy ./dist",
     "dev": "vite --mode ssr",
+    "tail": "wrangler pages deployment tail --project-name maibot-web",
     "serve": "wrangler pages dev ./dist --compatibility-flags=nodejs_als"
   },
   "dependencies": {

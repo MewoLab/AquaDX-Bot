@@ -1,4 +1,4 @@
-import { RatingListEntry, UserMusic, Song, Nameplate as NameplateData, UserCombinedRating, MaiVersion, BUDDIES_PLUS_LOGO, BUDDIES_LOGO, Chart, PRISM_LOGO } from '@clansty/maibot-types';
+import { RatingListEntry, UserMusic, Song, Nameplate as NameplateData, UserCombinedRating, MaiVersion, BUDDIES_PLUS_LOGO, BUDDIES_LOGO, Chart, PRISM_LOGO, PRISM_PLUS_LOGO } from '@clansty/maibot-types';
 import B50Song from './B50Song';
 import { computeRa, ratingAnalyse } from '@clansty/maibot-utils';
 import styles from './B50.module.css';
@@ -7,6 +7,7 @@ import { component$ } from '@builder.io/qwik';
 
 const getLogoByVersion = (ver: MaiVersion) => {
 	switch (ver) {
+		case 155: return PRISM_PLUS_LOGO;
 		case 150: return PRISM_LOGO;
 		case 145: return BUDDIES_PLUS_LOGO;
 		case 140: return BUDDIES_LOGO;
