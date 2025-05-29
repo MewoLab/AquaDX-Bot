@@ -7,7 +7,8 @@ import { XMLParser } from 'fast-xml-parser';
 const parser = new XMLParser();
 
 for (const a of await fsP.readdir(path.join(process.argv[2]))) {
-	if (!a.startsWith('A')) continue;
+	if (a.length !== 4) continue;
+	console.log(a)
 	const base = path.join(process.argv[2], a);
 	if (fs.existsSync(path.join(base, 'title'))) {
 		for (const dir of await fsP.readdir(path.join(base, 'title'))) {
@@ -24,12 +25,12 @@ for (const a of await fsP.readdir(path.join(process.argv[2]))) {
 				original.title[id] = {
 					name: meta.TitleData.name.str.toString(),
 					ver: meta.TitleData.releaseTagName.str.toString(),
-					disable: "false",
+					disable: 'false'
 				};
 			}
 		}
 	}
-	
+
 	if (fs.existsSync(path.join(base, 'chara'))) {
 		for (const dir of await fsP.readdir(path.join(base, 'chara'))) {
 			if (!fs.existsSync(path.join(base, 'chara', dir, 'Chara.xml'))) continue;
@@ -42,12 +43,12 @@ for (const a of await fsP.readdir(path.join(process.argv[2]))) {
 			} else {
 				original.chara[id] = {
 					name: meta.CharaData.name.str.toString(),
-					disable: "false",
+					disable: 'false'
 				};
 			}
 		}
 	}
-	
+
 	if (fs.existsSync(path.join(base, 'frame'))) {
 		for (const dir of await fsP.readdir(path.join(base, 'frame'))) {
 			if (!fs.existsSync(path.join(base, 'frame', dir, 'frame.xml'))) continue;
@@ -60,12 +61,12 @@ for (const a of await fsP.readdir(path.join(process.argv[2]))) {
 			} else {
 				original.frame[id] = {
 					name: meta.FrameData.name.str.toString(),
-					disable: "false",
+					disable: 'false'
 				};
 			}
 		}
 	}
-	
+
 	if (fs.existsSync(path.join(base, 'Icon'))) {
 		for (const dir of await fsP.readdir(path.join(base, 'Icon'))) {
 			if (!fs.existsSync(path.join(base, 'Icon', dir, 'Icon.xml'))) continue;
@@ -78,12 +79,12 @@ for (const a of await fsP.readdir(path.join(process.argv[2]))) {
 			} else {
 				original.icon[id] = {
 					name: meta.IconData.name.str.toString(),
-					disable: "false",
+					disable: 'false'
 				};
 			}
 		}
 	}
-	
+
 	if (fs.existsSync(path.join(base, 'Plate'))) {
 		for (const dir of await fsP.readdir(path.join(base, 'Plate'))) {
 			if (!fs.existsSync(path.join(base, 'Plate', dir, 'Plate.xml'))) continue;
@@ -96,7 +97,25 @@ for (const a of await fsP.readdir(path.join(process.argv[2]))) {
 			} else {
 				original.plate[id] = {
 					name: meta.PlateData.name.str.toString(),
-					disable: "false",
+					disable: 'false'
+				};
+			}
+		}
+	}
+
+	if (fs.existsSync(path.join(base, 'Partner'))) {
+		for (const dir of await fsP.readdir(path.join(base, 'Partner'))) {
+			if (!fs.existsSync(path.join(base, 'Partner', dir, 'Partner.xml'))) continue;
+			const meta = parser.parse(await fsP.readFile(path.join(base, 'Partner', dir, 'Partner.xml'), 'utf-8'));
+
+			const id = meta.PartnerData.name.id.toString();
+			const origin = original.partner[id];
+			if (origin) {
+				origin.name = meta.PartnerData.name.str.toString();
+			} else {
+				original.partner[id] = {
+					name: meta.PartnerData.name.str.toString(),
+					disable: 'false'
 				};
 			}
 		}

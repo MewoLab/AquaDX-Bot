@@ -6,6 +6,7 @@
   "scripts": {
     "genFileIds": "tsx src/genFileIds.ts",
     "update-allmusic-web": "scp all-music.json daisy:/etc/nginx/aqua-data/mai2/00",
+    "update-allitems-web": "scp all-items-new.json daisy:/etc/nginx/aqua-data/mai2/00/all-items.json",
     "update-allmusic-web-chu": "scp chu-all-music.json daisy:/etc/nginx/aqua-data/chu3/00/all-music.json"
   },
   "devDependencies": {
