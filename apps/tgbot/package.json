@@ -15,7 +15,7 @@
     "@types/xxhashjs": "^0.2.4",
     "cross-env": "^7.0.3",
     "nushell": "^0.98.0",
-    "wrangler": "^3.72.0"
+    "wrangler": "^4.18.0"
   },
   "dependencies": {
     "@clansty/maibot-core": "workspace:^",
