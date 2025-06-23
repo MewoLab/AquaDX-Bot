@@ -32,9 +32,9 @@ export default <T extends BotTypes>({ bot, env, getContext, musicToFile, enableO
 			return true;
 		}
 
-		const minato = event.params.includes('--minato');
+		const minato = event.params.includes('--minato') || event.params.includes('--munet');
 
-		const param = event.params.filter(it => it !== '--minato').join('');
+		const param = event.params.filter(it => it !== '--minato' && it !== '--munet').join('');
 		let profile: UserProfile;
 
 		if (/^\d{20}$/.test(param) && enableOfficialServers) { // is AIME
