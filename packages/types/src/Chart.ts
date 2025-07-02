@@ -43,7 +43,7 @@ export default class Chart implements Sheet {
 			this.internalLevelValue = level155;
 		}
 		const valueFromAllMusic = dataFromAllMusic?.notes[LEVEL_EN.indexOf(data.difficulty)]?.lv;
-		if (this.regions && !Object.values(this.regions).some(Boolean)) {
+		if (this.regions && !Object.values(this.regions).some(Boolean) && valueFromAllMusic) {
 			// 删除曲
 			this.internalLevelValue = valueFromAllMusic;
 		}

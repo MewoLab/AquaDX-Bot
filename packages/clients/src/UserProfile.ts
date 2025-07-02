@@ -147,12 +147,11 @@ export class UserProfile {
 		const convertedList = [] as number[];
 		for (const music of musicIdList) {
 			if (music instanceof Song) {
-				const std = music.sheets.find(it => it.type === 'std');
-				const dx = music.sheets.find(it => it.type === 'dx');
-				std?.internalId && convertedList.push(std.internalId);
-				dx?.internalId && convertedList.push(dx.internalId);
+				convertedList.push(music.id % 1e4);
+				convertedList.push(music.id % 1e4 + 1e4);
 			} else {
-				convertedList.push(music);
+				convertedList.push(music % 1e4);
+				convertedList.push(music % 1e4 + 1e4);
 			}
 		}
 		return this.client.getUserMusic(this.userId, convertedList);
