@@ -15,9 +15,7 @@ export default component$(({ userMusic, level, region, requiredSongIdList, logo,
 		const charts = song.sheets.filter(chart => chart.level === level);
 		for (const chart of charts) {
 			// 不包括删除曲
-			if (!chart.regions[region]) continue;
-			// 不含 BUDDiES PLUS 的歌
-			if (chart.version === VersionEnum.BUDDiESPLUS) continue;
+			// if (!chart.regions[region]) continue;
 			const score = userMusic.find(it => it.musicId === chart.internalId && it.level === LEVEL_EN.indexOf(chart.difficulty));
 			progress[LEVEL_EN.indexOf(chart.difficulty)].all++;
 			// TODO: 检查成绩，比如说 12 鸟加完成图

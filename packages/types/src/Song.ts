@@ -172,9 +172,9 @@ export default class Song implements DataSong {
 
 		song = dxdata.songs.find(song => song.title === dataFromAllMusic.name) ||
 			dxdata.songs.find(song => song.title.toLowerCase() === dataFromAllMusic.name.toLowerCase());
-		if (song && dx && !song.sheets.some(it => it.type === TypeEnum.DX)) {
+		if (song && dx && !song.sheets.some(it => it.type === TypeEnum.DX) && allMusic[id + 1e4]) {
 			song = null;
-		} else if (song && !dx && !song.sheets.some(it => it.type === TypeEnum.STD)) {
+		} else if (song && !dx && !song.sheets.some(it => it.type === TypeEnum.STD) && allMusic[id]) {
 			song = null;
 		}
 		if (song) return new this(song, dx, false, ver);
@@ -245,7 +245,7 @@ export default class Song implements DataSong {
 	}
 
 	public static allIds = _.uniq(Object.keys(ALL_MUSIC).map(Number).map(it => it % 1e4));
-	public static getAllSongs = (ver: MaiVersion = 155) => Song.allIds.map(id => Song.fromId(id, ver)).filter(it => it);
+	public static getAllSongs = (ver: MaiVersion = 155) => Song.allIds.filter(it => it < 2000).map(id => Song.fromId(id, ver)).filter(it => it);
 
 	public getChart(difficulty: DifficultyEnum | number | typeof LEVEL[number], dx = this.dx) {
 		if (LEVEL.includes(difficulty as any)) {
